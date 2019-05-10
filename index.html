@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tarea Colaborativa - Fotografos</title>
+    <!-- Insertamos el favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- Insertamos los estilos y la fuente -->
+    <style>
+        @import "./css/style.css";
+        @import url("https://fonts.googleapis.com/css?family=Handlee");
+    </style>
+    <!-- Añadimos los iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Insertamos el header y el menus de navegacion -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a id="linkFoto" href="./index.html"><u>Fotógrafos</u> </a>
+                </li>
+                <li><i class="fas fa-camera fa-2x"></i></li>
+                <li><a id="linkGaleria" href="./galeria.html">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Creamos una seccion principal y cada fotografos se compondra de dos cards,
+         una con la foto que se ampliara y pasara de b/n a color y otra con los datos del mismo -->
+    <section>
+        <div class="fotografo">
+            <img id="fotografo1" src="./img/photographer1.png" />
+        </div>
+        <div class="fotografo fBackGround">
+            <div class="control">
+                <p>
+                    Tom Hoops
+                </p>
+                <p>
+                    Fotógrafo inglés (nacido a comienzos de los 70, vive en Bangkok, Tailandia), cuyos trabajos, mayoritariamente en blanco y negro, son poderosos e impactantes, con un estilo único y potente que es fácilmente reconocible por su originalidad y fuerza.
+                </p>
+            </div>
+        </div>
+        <div class="fotografo">
+            <img id="fotografo2" src="./img/photographer2.png" />
+        </div>
+        <div class="fotografo fBackGround">
+            <div class="control">
+                <p>
+                    Lisa Bettany
+                </p>
+                <p>
+                    Es empresaria de tecnología y fotógrafa canadiense. Es reconocida por la creación de la aplicación Camera+ para iPhone cuyas ventas superaron las 10 millones de copias a partir de 2012.
+                </p>
+            </div>
+        </div>
+        <div class="fotografo">
+            <img id="fotografo3" src="./img/photographer3.png" />
+        </div>
+        <div class="fotografo fBackGround">
+            <div class="control">
+                <p>
+                    Ansel Adams
+                </p>
+                <p>
+                    Conocido por sus fotografías en blanco y negro de paisajes del parque nacional de Yosemite en Estados Unidos y como autor de numerosos libros sobre fotografía como su trilogía de manuales de instrucción técnica (La Cámara, El Negativo y La Copia).
+                </p>
+            </div>
+        </div>
+        <div class="fotografo">
+            <img id="fotografo4" src="./img/photographer4.png" />
+        </div>
+        <div class="fotografo fBackGround">
+            <div class="control">
+                <p>
+                    Annie Leibovitz
+                </p>
+                <p>
+                    Es la fotógrafa mejor pagada del mundo y ha trabajado para revistas como Vanity Fair, Rolling Stone y Vogue.En 1984 fue galardonada por la Asoc. Estadounidense de Editores de Revistas como Fotógrafa del año.2​ En 1988 recibió el premio Clio.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Colocamos un footer con nuestros datos -->
+    <footer>
+        Tarea Colaborativa - Grupo 09 - Parte 1 Jesus Maria Gomez Marquez 48933275Q
+    </footer>
+    <!-- Importamos jquery y el script donde haremos las funciones -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/scriptJesus.js"></script>
+</body>
+
+</html>
