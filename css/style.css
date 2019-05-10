@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    font-family: 'Handlee', cursive;
+    overflow-x: hidden;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 255, 255);
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    background: url(../img/header-bg.png);
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+li {
+    float: left;
+    padding: 0 2vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fafafa;
+}
+
+.fotografo {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 5px;
+    background: black;
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.pieFoto {
+    text-align: center;
+    background: url(../img/header-bg.png);
+    background-size: cover;
+    color: white;
+    width: 120%;
+    z-index: 0;
+}
+
+.info {
+    position: relative;
+    top: 0;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 5px;
+    background: url(https://www.elindependiente.com/wp-content/uploads/2018/10/MArio-casas-franciso-boix-1440x808.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.fBackGround {
+    background: url(../img/text-bg.png);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.control {
+    padding: 0 25% 0 10%;
+}
+
+.control>p {
+    padding: 2vh 0;
+}
+
+.animateScale {
+    transform: scale(1.5);
+    filter: grayscale(0%);
+    transition: 0.5s;
+}
+
+.animateFont {
+    font-size: 1.3em;
+    transition: 0.5s;
+}
+
+.fotografo:hover+.fBackGround {
+    filter: grayscale(0%);
+    transition: 0.5s;
+}
+
+.fBackGround:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+footer {
+    width: 100vw;
+    min-height: 10vh;
+    background: url(../img/footer-bg.png);
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .fotografo {
+        width: 80vw;
+        height: 80vw;
+    }
+}
